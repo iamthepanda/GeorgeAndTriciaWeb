@@ -3,6 +3,7 @@
     Author     : tricianemiroff
 */
 
+<<<<<<< HEAD
 /*
 html{
     background: url(crystal-wallpaper-hd-35.jpg) no-repeat center center fixed;
@@ -21,6 +22,10 @@ body{
     -o-background-size:cover;
     background-size: cover;
     height: 100vh;
+=======
+body{
+    background: url(purple-apple-galaxy.jpg) no-repeat;
+>>>>>>> c113d5c23a90ea9ceba8773f9d73c791e38ff24a
 }
 
 .navbar{
@@ -33,9 +38,13 @@ body{
 }
 
 .navbar a{
+<<<<<<< HEAD
     color: goldenrod; 
     postion: relative;
     opacity: 1;
+=======
+    color: goldenrod;   
+>>>>>>> c113d5c23a90ea9ceba8773f9d73c791e38ff24a
 }
 
 .navbar a:hover{
@@ -48,6 +57,7 @@ body{
 
 .navigation {
     background-color: #562161;
+<<<<<<< HEAD
     opacity: .85;
     height: 170px;
     top: 80px;
@@ -56,6 +66,11 @@ body{
     font-family: "Arapey", serif; 
     font-weight: 400;
     position: relative;
+=======
+    height: 170px;
+    top: 80px;
+    /*margin-left: 30px;*/
+>>>>>>> c113d5c23a90ea9ceba8773f9d73c791e38ff24a
 }
 
 .navbar-brand{
@@ -67,7 +82,11 @@ body{
 }
 
 .divcss{
+<<<<<<< HEAD
     top: -70px;
+=======
+    top: -15px;
+>>>>>>> c113d5c23a90ea9ceba8773f9d73c791e38ff24a
     padding-left: 200px;
     position: relative;
     font-size: x-large;
@@ -75,6 +94,7 @@ body{
 
 .newsection{
     background-color: #562161;
+<<<<<<< HEAD
     opacity: .85;
 /*    background: rgb(100, 187, 97, 0.85);*/
     position: relative;
@@ -110,3 +130,11 @@ body{
     font-size: x-large;
     margin-top: -60px;
 }
+=======
+    position: relative;
+    color: goldenrod;
+    margin-top: 200px;
+    height: 300px;
+    margin-left: 70px;
+}
+>>>>>>> c113d5c23a90ea9ceba8773f9d73c791e38ff24a
