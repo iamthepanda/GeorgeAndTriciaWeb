@@ -1,0 +1,112 @@
+/* 
+    Created on : Jun 29, 2015, 3:55:35 PM
+    Author     : tricianemiroff
+*/
+
+/*
+html{
+    background: url(crystal-wallpaper-hd-35.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100hv;
+}
+*/
+
+body{
+    background: url(crystal-wallpaper-hd-35.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    /*height: 100px;*/
+    top: 100px;
+    padding-left: 200px;
+    width: auto;
+    position: relative;
+    list-style-type: none;
+}
+
+.navbar a{
+    color: goldenrod; 
+    postion: relative;
+    opacity: 1;
+}
+
+.navbar a:hover{
+    color: #7c0bbe;
+}
+
+.navbar ul a:hover{
+    background-color: #562161;
+}
+
+.navigation {
+    background-color: #562161;
+    opacity: .85;
+    height: 170px;
+    top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Arapey", serif; 
+    font-weight: 400;
+    position: relative;
+}
+
+.navbar-brand{
+    position: relative;
+    width: auto;
+    font-size: xx-large;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.divcss{
+    top: -70px;
+    padding-left: 200px;
+    position: relative;
+    font-size: x-large;
+}
+
+.newsection{
+    background-color: #562161;
+    opacity: .85;
+/*    background: rgb(100, 187, 97, 0.85);*/
+    position: relative;
+    color: goldenrod;
+    margin-top: 200px;
+    height: 640px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.iconheader{
+    position: relative;
+    margin-top: -560px;
+    margin-left: 150px;
+}
+
+.head img{
+    postion: relative;
+    margin-left: -250px;
+    margin-top: 30px;
+}
+
+.newsection img{
+    margin-left: 30px;
+    opacity: 1;
+    width: 400px;
+    height: 500px;
+}
+
+.text1 p{
+    margin-left: 550px;
+    text-align: center;
+    font-size: x-large;
+    margin-top: -60px;
+}

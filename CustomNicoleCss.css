@@ -1,0 +1,44 @@
+
+body{
+    background: url(crystal-wallpaper-hd-35.jpg) no-repeat;
+    background-size: cover;
+}
+
+.profile{
+    margin: 30px;
+    background-color: #fff;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+    height: 100vh;
+    position: relative;
+}
+
+/*
+.profile p, .profile h1, .profile h2{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 650px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+}
+*/
+
+.profile1 h1{
+    margin-top: -100vh;
+/*    margin-top: 30px;*/
+    text-align: center;
+    margin-left: 120vh;
+    color: #000;
+    position: absolute;
+    
+}
+
+.biopic {
+    position: absolute;
+    margin-top: -139vh;
+    margin-left: 50px;
+    height: 90vh;
+    width: 85vh;
+}
