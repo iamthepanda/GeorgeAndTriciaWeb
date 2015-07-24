@@ -87,7 +87,7 @@
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
-        <div class="row, about">
+        <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius sapien eu pretium facilisis. Quisque malesuada placerat sapien. Mauris scelerisque sit amet sem vitae laoreet. Mauris orci orci, vehicula sed auctor in, suscipit at lacus. Praesent feugiat tellus sed lacus iaculis gravida.</p>
@@ -135,7 +135,9 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+    <div id="map">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Lombard+Street,San+Francisco,CA&zoom=13&size=600x300&maptype=roadmap">
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -154,7 +156,13 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script type="text/javascript" 
+            src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284"></script>
+    
+<!--    old key-->
+<!--    https://maps.googleapis.com/maps/api/js?key=AIzaSyCB1HMDjwgOJcSB95Pz0pItwbw-i6yo3JU&sensor=false-->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
