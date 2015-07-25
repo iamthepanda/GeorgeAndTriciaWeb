@@ -148,11 +148,10 @@ a:focus {
     text-align: center;
     color: #fff;
     color: floralwhite;
-/*    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-/*
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     background-color: crimson;
-*/
+
     background-image: url(milkyway.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -279,10 +278,11 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
+#map, #map-canvas {
     width: 100%;
     height: 200px;
     margin-top: 100px;
+    color: black;
 }
 
 @media(min-width:767px) {
@@ -294,9 +294,11 @@ a:focus {
         padding: 100px 0;
     }
 
-    #map {
+    #map, #map-canvas {
         height: 400px;
         margin-top: 250px;
+        color: black;
+        
     }
 }
 

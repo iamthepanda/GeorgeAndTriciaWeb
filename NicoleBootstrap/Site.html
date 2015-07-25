@@ -135,8 +135,39 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map">
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Lombard+Street,San+Francisco,CA&zoom=13&size=600x300&maptype=roadmap">
+    <div id="map-canvas">
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script>
+function initialize() {
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: new google.maps.LatLng(37.799348, -122.437577),
+    zoom: 15
+  });
+
+  var request = {
+    placeId: 'ChIJ99O20dCAhYARNku-EQ2roXY'
+  };
+
+  var infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+
+  service.getDetails(request, function(place, status) {
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent("Office");
+        infowindow.open(map, this);
+      });
+    }
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
     </div>
 
     <!-- Footer -->
@@ -154,15 +185,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" 
-            src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-&markers=color:red%7Clabel:C%7C40.718217,-73.998284"></script>
-    
-<!--    old key-->
-<!--    https://maps.googleapis.com/maps/api/js?key=AIzaSyCB1HMDjwgOJcSB95Pz0pItwbw-i6yo3JU&sensor=false-->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
